@@ -1,0 +1,202 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+img {
+	box-sizing: border-box;
+}
+
+.padre {
+	background: rgb(224, 232, 255);
+	display: flex;
+	flex-flow: row nowrap;
+	height: auto;
+
+	
+
+}
+	.fondo {
+		display: flex;
+		background-image: url(file:///C:/Users/PC/Desktop/javascript/pagina%204/order-summary-component-main/images/pattern-background-desktop.svg);
+		background-repeat: no-repeat;
+		flex-grow: 1;
+		position: relative;
+		top: -100px;
+
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+
+		
+
+		
+	
+	}
+
+		.article {
+			border-radius: 15px;
+			background: white;
+			height: auto;
+			position: relative;
+			left: 0;
+			right: 0;
+			top: 100px;
+			bottom: 0;
+			margin: auto;
+			width: 350px;
+			box-shadow: 5px 5px 15px rgb(199, 211, 246);
+			
+		}
+			.header {
+				display: flex;
+				flex-flow: column nowrap;
+				height: auto;
+				
+				align-items: center;
+
+			}
+				.imagen-header {
+					display: flex;
+					
+					width: 100%;
+					margin: ;
+
+				}
+					.imagen-header img {
+						width: 100%;
+						height: 100%;
+						overflow: hidden;
+						border-radius: 15px 15px 0 0;
+
+
+					}
+				.header h2 {
+					margin: 30px 0 20px 0;
+					align-self: center;
+				}
+
+				.header p {
+					align-self: center;
+					text-align: center;
+					line-height: 1.5;
+					
+				}
+					.header p, .description p {
+						color: rgb(151, 157, 172);
+						font-weight: 500;
+					}
+
+					.header h2, .description-item {
+						color: rgb(37, 44, 84);
+					}
+
+		.main {
+			padding: 0 30px;
+			margin: 20px 0;
+		}
+			.section-song {
+				display: flex;
+				background: rgb(248, 249, 254);
+				padding: 15px;
+				border-radius: 5%;
+				margin-bottom: 15px;
+				
+
+
+			}
+				.icono1 {
+					flex: 1 1 auto;	
+				}
+
+				.description {
+					
+					flex: 10 1 auto;
+					
+
+
+				}
+					.description-item {
+						display: flex;
+						margin: 6px 0 6px 15px;
+						align-self: center;
+						text-align: center;
+						font-size: 15px;
+						
+					}
+
+					.description-item-header {
+
+					}
+
+				.enlace {
+					flex: 1 1 auto;
+					display: flex;
+
+					
+
+				}
+					.enlace p {
+						align-self: center;
+
+					
+					}	
+
+					.enlace a {
+						color: rgb(56, 42, 225);
+					}
+
+			.botones {
+				display: flex;
+				flex-flow: column;
+			}
+				.boton {
+					margin: 2px;
+					border: none;
+					background: rgb(56, 42, 225);
+					height: 40px;
+					border-radius: 10px;
+
+				}
+					.boton1 {
+						box-shadow: 0px 3px 15px rgb(56, 42, 225);
+					}
+						.boton1:hover {
+							background: rgba(56, 42, 225, .7);
+						}
+
+						.boton2 h3:hover {
+							color: black;
+						}
+
+					.boton1 h3 {
+						color: white;
+						font-size: 12px;
+					}
+					.boton2 h3 {
+						color: rgb(122, 132, 163);
+						font-size: 12px;
+					}
+						
+
+
+				.boton2 {
+					background: transparent !important;
+				}
+
+@media screen and (max-width: 850px) {
+	.padre {
+		height: auto;
+		background: rgb(214, 225, 255);
+	}
+
+	.fondo {
+		background: none;
+		width: 10%;
+	}
+
+	.article {
+		flex-direction: column;
+	}
+}
